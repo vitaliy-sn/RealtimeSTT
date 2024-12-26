@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
         return resampled_audio.astype(np.int16).tobytes()
 
-    async def echo(websocket, path):
+    async def echo(websocket):
         print("Client connected")
         global client_websocket
         client_websocket = websocket
